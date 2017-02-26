@@ -15,7 +15,6 @@ public class ResultsDataObject {
 	public ResultsDataObject(Mat mat, double[][] points) {
 		this.mat = mat;
 		this.points = points;
-
 		SimpleRegression sr = new SimpleRegression();
 		sr.addData(points);
 		this.stdErr = sr.getSlopeStdErr();
